@@ -177,6 +177,25 @@ WHAT YOU GET THE AS WHEN YOU SEE NETWORK STATUS : <img width="725" height="63" a
 
 
 ▶️ <a href="https://github.com/user-attachments/assets/f1df0790-6dc0-4f95-9869-296467f71979" target="_blank">POC</a>
+<div align="center">
+
+
+# 📚 **CAT-C**
+**Google Calendar C2 Research Platform**  
+*Authorized Defensive Security Learning Only*
+<div align="center">
+
+<img width="320" height="240" alt="FBI Open Up" src="https://media.tenor.com/_YqdfwYLiQ4AAAAM/traffic-fbi-open-up.gif" />
+</div>
+
+<div style="background: linear-gradient(90deg, #ff9a9e 0%, #fecfef 50%, #fecfef 100%); 
+            padding: 15px; border-radius: 12px; border-left: 5px solid #ff4757;">
+  
+**⚠️ EDUCATIONAL & RESEARCH USE ONLY**  
+**Authorized Penetration Testing Environments**
+</div>
+
+</div>
 
 
 **CAT-C Calendar C2 Agent**  
