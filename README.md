@@ -175,6 +175,48 @@ WHAT YOU GET THE AS WHEN YOU SEE NETWORK STATUS : <img width="725" height="63" a
 ✅ Port 18385: Calendar polling (hidden)
 ✅ AV/EDR sees: Legit Google Calendar sync
 
+<h2>APT41 — Google Calendar C2 Resources</h2>
+
+<p>
+  This page collects reliable open-source reports on the APT41 threat group, 
+  focusing on how they abused Google Calendar as a covert Command & Control (C2) channel. 
+  These resources are useful for defensive research, threat intelligence, and learning about modern cloud-based attack techniques.
+</p>
+
+<ul>
+  <li>
+    <a href="https://cloud.google.com/blog/topics/threat-intelligence/apt41-innovative-tactics" target="_blank">
+      Google TAG: APT41 Innovative Tactics
+    </a>
+  </li>
+
+  <li>
+    <a href="https://www.resecurity.com/blog/article/apt-41-threat-intelligence-report-and-malware-analysis" target="_blank">
+      Resecurity: APT41 Malware Analysis
+    </a>
+  </li>
+
+  <li>
+    <a href="https://cybernews.com/security/chinese-hackers-abuse-google-calendar-for-malware-control/" target="_blank">
+      Cybernews: Google Calendar Abuse
+    </a>
+  </li>
+
+  <li>
+    <a href="https://securityonline.info/apt41-uses-google-calendar-as-covert-c2-in-stealthy-cyberespionage-campaign/" target="_blank">
+      SecurityOnline: Calendar C2 Deep Dive
+    </a>
+  </li>
+
+  <li>
+    <a href="https://www.mandiant.com/sites/default/files/2022-02/rt-apt41-dual-operation.pdf" target="_blank">
+      Mandiant APT41 Report (PDF)
+    </a>
+  </li>
+</ul>
+
+
+
 
 ▶️ <a href="https://github.com/user-attachments/assets/f1df0790-6dc0-4f95-9869-296467f71979" target="_blank">POC</a>
 <div align="center">
