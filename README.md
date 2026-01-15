@@ -5,13 +5,181 @@
 # 🐱📅 CAT-C
 CAT-C - Production Python C2 implant that weaponizes legitimate Google Calendar API infrastructure for bidirectional command-and-control. Mirrors sophisticated APT41 calendar abuse TTPs with enterprise-grade stealth across Windows/Linux/macOS environments. Deploy silently, beacon via obfuscated events, execute operator commands through description fields. Zero forensic footprint. 🐱📅💀.
 
-## 🔥 **28 OPSEC FEATURES**
-🔒 Encrypted IP obfuscation, 📝 Base64 event titles, 🔐 SHA256 change detection, 🔄 Title rotation (3x CMD/OUT), ✅ C/T/S prefix validation, ➤ Reset markers + ACK, 📡 5x command prefixes, 🎫 Session:base64 format, ⏱️ Jittered polling 2.5-4.5s, 😴 Dynamic sleep variance, 🌏 Asia/Kolkata timezone, 🔀 Cycle timing rotation, 🔗 HTTPS→HTTP fallback, 🔓 SSL bypass support, 🌐 No DNS resolution, 📅 Google Calendar API v3, ⚙️ Remote config fetch, 🛡️ Sanitized execution, ✂️ 8KB output limit, 🚪 6x shutdown keywords, 🤫 Silent error handling, 💾 Memory-only execution, ⏳ 5s timeout protection, 🔄 Auto-recovery beacon, ⏰ 24h CMD/12m OUT TTL, 🔍 Multi-query search, 📡 Self-beaconing startup, 🐄 Cowsay graceful exit
+<div align="center">
 
-## 📸 **WORKFLOW**
+## 🔥 **29 OPSEC FEATURES**
+
+| **Detection Evasion** | **Command Protocol** | **Network Stealth** | **Execution Safety** |
+|----------------------|---------------------|--------------------|---------------------|
+| 🔒 **Encrypted IP obfuscation** | 📝 **Base64 event titles** | ⏱️ **Jittered polling 2.5-4.5s** | 🛡️ **Sanitized execution** |
+| 🔐 **SHA256 change detection** | 🔄 **Title rotation (3x CMD/OUT)** | 😴 **Dynamic sleep variance** | ✂️ **8KB output limit** |
+| 🤫 **Silent error handling** | ✅ **C/T/S prefix validation** | 🌏 **Asia/Kolkata timezone** | ⏳ **5s timeout protection** |
+| 💾 **Memory-only execution** | ➤ **Reset markers + ACK** | 🔀 **Cycle timing rotation** | 🚪 **6x shutdown keywords** |
+| 🐄 **Cowsay graceful exit** | 📡 **5x command prefixes** | 🔗 **HTTPS→HTTP fallback** | 🔄 **Auto-recovery beacon** |
+| | 🎫 **Session:base64 format** | 🔓 **SSL bypass support** | |
+| | | 🌐 **No DNS resolution** | |
+| | | 📅 **Google Calendar API v3** | |
+| | | ⚙️ **Remote config fetch** | |
+| | | ⏰ **24h CMD/12m OUT TTL** | |
+| | | 🔍 **Multi-query search** | |
+| | | 📡 **Self-beaconing startup** | |
+
+
+
+</div>
+
+## **HOW TO USE**
+<div align="left">
+
+<h2>HOW TO USE</h2>
+
+<hr>
+
+<h3>1. Open Google Cloud Console</h3>
+
+<p>
+Go to:<br>
+https://console.cloud.google.com/
+</p>
+
+<hr>
+
+<h3>2. Create a Project & Service Account</h3>
+
+<ol>
+  <li>Click the ☰ (top-left menu)</li>
+  <li>Go to <b>IAM & Admin → Service Accounts</b></li>
+  <li>Click <b>Create Service Account</b></li>
+  <li>Create a new project if prompted</li>
+</ol>
+
+<p>Service account email example:</p>
+
+<pre>
+testdemo-svc@blahblahblah.iam.gserviceaccount.com
+</pre>
+
+<hr>
+
+<h3>3. Generate credentials.json</h3>
+
+<ol>
+  <li>Click the service account email</li>
+  <li>Go to <b>Keys</b></li>
+  <li>Add Key → Create New Key → JSON</li>
+  <li>Rename to <code>credentials.json</code></li>
+</ol>
+
+<pre>
+CAT-C/
+├── catserve.py
+└── credentials.json
+</pre>
+
+<hr>
+
+<h3>4. Enable Required API</h3>
+
+<p>
+☰ Menu → APIs & Services → Library<br>
+Enable:
+</p>
+
+<ul>
+  <li>Google Calendar API</li>
+  <li>Google Drive API (if needed)</li>
+</ul>
+
+<hr>
+
+<h3>5. Configure Google Calendar</h3>
+
+<ol>
+  <li>Open Google Calendar</li>
+  <li>Settings → Settings and sharing</li>
+  <li>Add the service account email</li>
+  <li>Grant <b>Make changes</b> permission</li>
+</ol>
+
+<hr>
+
+<h2>SERVER SIDE & SCRIPT SIDE</h2>
+
+<h3>1. Modify catserve.py</h3>
+
+<pre>
+CALENDAR_EMAIL = "YOUR_EMAIL_FROM_GOOGLE_CONSOLE"
+</pre>
+
+<hr>
+
+<h3>2. Generate Obfuscated Address</h3>
+
+<pre>
+python3 genaddr.py &lt;C2_SERVER_ADDRESS&gt;
+</pre>
+
+<p>Paste output into <code>cat-c.py</code></p>
+
+<hr>
+
+<h3>3. Start Server</h3>
+
+<pre>
+python3 catserve.py
+</pre>
+
+<hr>
+
+<h3>4. Run Client</h3>
+
+<p>Run <code>cat-c.py</code> on:</p>
+
+<ul>
+  <li>Windows</li>
+  <li>Linux</li>
+  <li>macOS</li>
+</ul>
+
+<hr>
+
+<h3>5. Open Google Calendar</h3>
+
+<p>
+Target hooked.<br>
+Command & Control active via Calendar.
+</p>
+
+</div>
+
+
+### ✅ Done
+
+
+
+
+## 📊 **WORKFLOW**
 <img width="1000" height="560" alt="workflow" src="https://github.com/user-attachments/assets/95a21f69-6feb-4bb4-80fb-63490ce225a9" />
 
-**Covert Calendar C2 Agent**  
-*28 OpSec Layers | GCR-RAT Protocol | Python/Linux/macOS/Windows*
+
+## 📸 **SCREENSHOTS**
+<img width="1920" height="724" alt="res0" src="https://github.com/user-attachments/assets/89d04be5-2f42-46c8-a98f-8e655c51f78f" />
+<img width="1920" height="693" alt="res1" src="https://github.com/user-attachments/assets/34a63231-f2ff-495a-9e29-26a49fdc472b" />
+
+## **TESTS**
+WHAT YOU GET THE AS WHEN YOU SEE NETWORK STATUS : <img width="725" height="63" alt="Image" src="https://github.com/user-attachments/assets/a668feda-5326-4b19-85f4-5581d1011492" />
+<img width="805" height="641" alt="image" src="https://github.com/user-attachments/assets/819cd8c5-87b2-456d-863a-5b59e800c019" />
+
+✅ ONLY GOOGLE SERVER CONNECTIONS (142.250.4.95)
+✅ NO DIRECT TEAMSERVER / REVERSE SHELL 
+✅ Port 18385: Calendar polling (hidden)
+✅ AV/EDR sees: Legit Google Calendar sync
+
+
+▶️ <a href="https://github.com/user-attachments/assets/f1df0790-6dc0-4f95-9869-296467f71979" target="_blank">POC</a>
+
+
+**CAT-C Calendar C2 Agent**  
+*29 OpSec Layers | GCR-RAT Protocol | Python/Linux/macOS/Windows*
 
 </div>
