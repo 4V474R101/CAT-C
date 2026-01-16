@@ -119,7 +119,7 @@ CALENDAR_EMAIL = "YOUR_EMAIL_FROM_GOOGLE_CONSOLE"
 python3 genaddr.py &lt;C2_SERVER_ADDRESS&gt;
 </pre>
 
-<p>Paste output into <code>cat-c.py</code></p>
+<p>Paste output into <code>catc.py</code></p>
 
 <hr>
 
@@ -133,7 +133,7 @@ python3 catserve.py
 
 <h3>4. Run Client</h3>
 
-<p>Run <code>cat-c.py</code> on:</p>
+<p>Run <code>Catc.py</code> on:</p>
 
 <ul>
   <li>Windows</li>
