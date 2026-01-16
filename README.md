@@ -105,6 +105,15 @@ Enable:
 
 <h2>SERVER SIDE & SCRIPT SIDE</h2>
 
+<h3>First Of All Install Dependencies Of Python In Target Machine</h3>
+
+<pre>
+pip3 install flask
+pip3 install google-auth google-api-python-client
+</pre>
+
+
+
 <h3>1. Modify catserve.py</h3>
 
 <pre>
