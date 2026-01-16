@@ -28,7 +28,6 @@ CAT-C - Production Python C2 implant that weaponizes legitimate Google Calendar 
 
 </div>
 
-## **HOW TO USE**
 <div align="left">
 
 <h2>HOW TO USE</h2>
