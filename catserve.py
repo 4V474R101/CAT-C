@@ -37,7 +37,7 @@ except Exception as e:
     sys.exit(1)
 
 # ---------- Configuration ----------
-CALENDAR_EMAIL = "m37h693@gmail.com"          # <-- CHANGE TO YOUR CALENDAR EMAIL
+CALENDAR_EMAIL = "YOUR_EMAIL_FROM_GOOGLE_CONSOLE"          # <-- CHANGE TO YOUR CALENDAR EMAIL
 COMMAND_TITLE = base64.b64encode(b"CMD").decode()[:8]   # "Q01E"
 POLL_INTERVAL = 10   # seconds between checking for new command events
 
